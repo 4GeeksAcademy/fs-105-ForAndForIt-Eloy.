@@ -18,13 +18,13 @@ let noun = ['jogger', 'racoon'];
 let exten = ['.com','.es']
 
 
-for (let p of pronoun) {
-    for (let a of adj){
-        for (let n of noun){
-            for (let e of exten){
-                console.log(p+a+n+e);
-                
-            }
-        }
-    }
-}
+pronoun.forEach(function(p) {
+  adj.forEach(function(a) {
+    noun.forEach(function(n) {
+      exten.forEach(function(e) {
+        console.log(p + a + n + e);
+        
+      });
+    });
+  });
+});
